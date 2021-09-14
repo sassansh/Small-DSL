@@ -80,15 +80,13 @@ Angela Tian
 
 Anna Takeuchi - [GitHub](https://github.com/annatake) - [LinkedIn](https://www.linkedin.com/in/anna-takeu/?originalSubdomain=ca)
 
-Project Link: [https://github.com/sassansh/Small-DSL](https://github.com/sassansh/Small-DSL)
-
-[contributors-shield]: https://img.shields.io/github/contributors/sassansh/Places.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/sassansh/Small-DSL.svg?style=for-the-badge
 [contributors-url]: https://github.com/sassansh/Small-DSL/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/sassansh/Places.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/sassansh/Small-DSL.svg?style=for-the-badge
 [forks-url]: https://github.com/sassansh/Small-DSL/network/members
-[stars-shield]: https://img.shields.io/github/stars/sassansh/Places.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/sassansh/Small-DSL.svg?style=for-the-badge
 [stars-url]: https://github.com/sassansh/Small-DSL/stargazers
-[issues-shield]: https://img.shields.io/github/issues/sassansh/Places.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/sassansh/Small-DSL.svg?style=for-the-badge
 [issues-url]: https://github.com/sassansh/Small-DSL/issues
-[license-shield]: https://img.shields.io/github/license/sassansh/Places.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/sassansh/Small-DSL.svg?style=for-the-badge
 [license-url]: https://github.com/sassansh/Small-DSL/blob/main/LICENSE.txt
