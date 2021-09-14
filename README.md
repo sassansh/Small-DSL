@@ -74,7 +74,7 @@ Cara Wong - [GitHub](https://github.com/cara-wong) - [LinkedIn](https://www.link
 
 Amir Jafarvand - [GitHub](https://github.com/amirjfr) - [LinkedIn](https://www.linkedin.com/in/amir-jafarvand/) - [Personal Website](http://www.amirjafarvand.com/)
 
-Angela Tian
+Angela Tian - [GitHub](https://github.com/tiangela1027) - [LinkedIn](https://www.linkedin.com/in/tiangela/) - [Personal Website](https://tiangela1027.github.io)
 
 Anna Takeuchi - [GitHub](https://github.com/annatake) - [LinkedIn](https://www.linkedin.com/in/anna-takeu/?originalSubdomain=ca)
 
