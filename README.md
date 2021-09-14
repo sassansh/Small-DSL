@@ -54,8 +54,6 @@ You should have [Git](https://git-scm.com/) installed on your PC.
 
 ## Assignment Description 📚
 
-### Task Description
-
 - Think up a *use-case* for a new small *domain-specific language* (DSL)
   - Make this explicit: what will the DSL enable, and how? Submit your group's idea to your TA for feedback.
 - Define the DSL informally on paper: its grammar and semantics
