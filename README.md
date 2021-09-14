@@ -7,7 +7,7 @@
 <br />
 <p align="center">
  <a href="https://github.com/sassansh/Small-DSL">
-    <img src="/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/images/logo.png" alt="Logo" width="117" height="80">
   </a>
   <h2 align="center">A Small DSL ✨</h2>
 
@@ -63,7 +63,7 @@ You should have [Git](https://git-scm.com/) installed on your PC.
 
   - Make sure to use *version control throughout your project*; use the git repository we will provide to you.
 
-- Perform a *task-driven user study* on the effectiveness of the language *before* you start implementing. We'll see some material on this on *Tuesday 22nd September.*
+- Perform a *task-driven user study* on the effectiveness of the language *before* you start implementing.
 - Modify the language based on the results of the study; _redesign accordingly_.
 - Implement the language (some possible techniques over the next lectures).
 - Perform a *task-driven user study* on effectiveness of the complete language. Reflect on the outcome: what is your evaluation?
