@@ -1,0 +1,62 @@
+canvas colour: black
+text youtubeChannel: white "Math for Kids" font-size 8000
+text title: white "Introduction of Shapes" font-size 8000
+shape triangle: green triangle height=60 base=100
+shape rectangle: red rectangle height=60 width=100
+shape circle: purple circle radius=40
+shape square: yellow square height=80
+shape cube1: blue cube height=50 width=50 depth=50
+shape cube2: blue cube height=50 width=50 depth=50
+shape cube3: blue cube height=50 width=50 depth=50
+shape cube4: blue cube height=50 width=50 depth=50
+
+
+animation-def: channel_name with input (obj, n):
+move obj from [0|0] to [960|540] starting at 0s for 1s
+rotate obj at [960|540] starting at 1s for 2s
+play channel_name(youtubeChannel, 0) starting at 0s
+
+animation-def: topic with input (obj, n):
+move obj from [0|540] to [960|540] starting at 0s for 2s
+stay obj at [960|540] starting at 2s for 2s
+play topic(title, 0) starting at 5s
+
+animation-def: top_right with input (obj, n):
+move obj from [1800|0] to [1800|900] starting at 0s for 1s
+stay obj at [1800|900] starting at 1s for 3s
+move obj from [1800|900] to [1800|0] starting at 4s for 1s
+play top_right(triangle, 0) starting at 0s
+
+animation-def: top_left with input (obj, n):
+move obj from [1920|900] to [120|900]  starting at 0s for 1s
+stay obj at [120|900] starting at 1s for 3s
+move obj from [120|900] to [1920|900]  starting at 4s for 1s
+play top_left(square, 0) starting at 0s
+
+animation-def: down_right with input (obj, n):
+move obj from [0|180] to [1760|180] starting at 0s for 1s
+stay obj at [1760|180] starting at 1s for 3s
+move obj from [1760|180] to [0|180] starting at 4s for 1s
+play down_right(rectangle, 0) starting at 0s
+
+animation-def: down_left with input (obj, n):
+move obj from [120+n|1080] to [120+n|180] starting at 0s for 1s
+stay obj at [120+n|180] starting at 1s for 3s
+move obj from [120+n|180] to [120+n|1080] starting at 4s for 1s
+play down_left(circle, 40) starting at 0s
+
+animation-def: rotate_cube1 with input (obj, n):
+	rotate obj at [1750|540] starting at 0s for 5s
+repeat 2 times rotate_cube1(cube1, 0) starting at 0s
+
+animation-def: rotate_cube2 with input (obj, n):
+	rotate obj at [170|540] starting at 0s for 5s
+repeat 2 times rotate_cube2(cube2, 0) starting at 0s
+
+animation-def: rotate_cube3 with input (obj, n):
+	rotate obj at [960|180] starting at 0s for 5s
+repeat 2 times rotate_cube3(cube3, 0) starting at 0s
+
+animation-def: rotate_cube4 with input (obj, n):
+	rotate obj at [960|900] starting at 0s for 5s
+repeat 2 times rotate_cube4(cube4, 0) starting at 0s

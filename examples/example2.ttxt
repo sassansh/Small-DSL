@@ -1,0 +1,59 @@
+canvas colour: blue
+shape squareOrange1: orange square height=330
+shape squareBlue1: blue square height=300
+shape squareWhite1: white square height=260
+shape squareOrange2: orange square height=220
+shape squareBlue2: blue square height=180
+shape squareWhite2: white square height=140
+shape squareOrange3: orange square height=100
+shape rectGreen1: green rectangle height=500 width=25
+shape circleYellow1: yellow circle radius=30
+shape circleGreen1: green circle radius=50
+shape circleGreen2: green circle radius=60
+
+shape circleWhite1: white circle radius=60
+shape circleWhite2: white circle radius=90
+shape circleWhite3: white circle radius=100
+shape circleWhite4: white circle radius=70
+
+shape circleWhite5: white circle radius=60
+shape circleWhite6: white circle radius=80
+shape circleWhite7: white circle radius=90
+shape circleWhite8: white circle radius=110
+shape circleWhite9: white circle radius=50
+
+shape grass: green rectangle height=50 width=1980
+stay grass at [990|10] starting at 0s for 30s
+
+shape box: yellow rectangle height=300 width=600
+shape innerBox: white rectangle height= 260 width=560
+text title1: black "Intro to Starting" font-size 3500
+text title2: black "Your Very Own Garden!" font-size 3500
+stay box at [570|450] starting at 7s for 23s
+stay innerBox at [570|450] starting at 7s for 23s
+stay title1 at [570|475] starting at 7s for 23s
+stay title2 at [570|425] starting at 7s for 23s
+
+stay circleGreen1 at [1395|270] starting at 4s for 26s
+stay circleGreen2 at [1300|150] starting at 2s for 28s
+stay rectGreen1 at [1350|170] starting at 0s for 30s
+
+rotate squareOrange1 at [1350|579] starting at 1s for 29s
+rotate squareBlue1 at [1350|579] starting at 2s for 28s
+rotate squareWhite1 at [1350|579] starting at 3s for 27s
+rotate squareOrange2 at [1350|579] starting at 4s for 26s
+rotate squareBlue2 at [1350|579] starting at 5s for 25s
+rotate squareWhite2 at [1350|579] starting at 6s for 24s
+rotate squareOrange3 at [1350|579] starting at 7s for 23s
+stay circleYellow1 at [1350|579] starting at 7s for 23s
+
+move circleWhite1 from [650|850] to [240|850] starting at 0s for 30s
+move circleWhite2 from [740|910] to [340|910] starting at 0s for 30s
+move circleWhite3 from [835|880] to [455|880] starting at 0s for 30s
+move circleWhite4 from [960|870] to [520|870] starting at 0s for 30s
+
+move circleWhite5 from [1270|880] to [750|880] starting at 0s for 30s
+move circleWhite6 from [1340|910] to [840|910] starting at 0s for 30s
+move circleWhite7 from [1585|880] to [935|880] starting at 0s for 30s
+move circleWhite8 from [1460|900] to [970|900] starting at 0s for 30s
+move circleWhite9 from [1670|860] to [1070|860] starting at 0s for 30s

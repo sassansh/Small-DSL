@@ -1,0 +1,77 @@
+canvas colour: white
+
+shape head: yellow circle radius=100
+shape body: yellow rectangle height=200 width=200
+
+shape pants_top: blue rectangle height=70 width=160
+shape pants_bottom: blue circle radius=100
+shape pants_bands: blue rectangle height=15 width=200
+shape button_left: black circle radius=7
+shape button_right: black circle radius=7
+
+
+shape eye_band: black rectangle height=15 width=200
+shape eye_outside: black circle radius=60
+shape eye_inside: white circle radius=50
+shape pupil: black circle radius=15
+
+shape mouth: black rectangle height=10 width=100
+
+shape leg_left: blue rectangle height=80 width=40
+shape leg_right: blue rectangle height=80 width=40
+shape feet_left: black rectangle height=20 width=60
+shape feet_right: black rectangle height=20 width=60
+
+
+shape arm_left: yellow rectangle height=100 width=20
+shape arm_right: yellow rectangle height=100 width=20
+shape hand_left: black circle radius=16
+shape hand_right: black circle radius=16
+
+shape hair1: black rectangle height=30 width=5
+shape hair2: black rectangle height=30 width=5
+shape hair3: black rectangle height=30 width=5
+shape hair4: black rectangle height=30 width=5
+
+shape inner_board: white rectangle height=300 width=600
+shape outer_board: black rectangle height=330 width=630
+text thank_you_text: orange "Thank you!" font-size 6000
+
+group B1 is thank_you_text on inner_board on outer_board
+
+
+
+stay head at [295|600] starting at 0s for 8s
+stay pants_bottom at [300|400] starting at 0s for 8s
+stay body at [302|500] starting at 0s for 8s
+stay pants_top at [308|430] starting at 0s for 8s
+stay pants_bands at [308|460] starting at 0s for 8s
+stay eye_band at [311|580] starting at 0s for 8s
+stay mouth at [311|490] starting at 0s for 8s
+stay eye_outside at [311|580] starting at 0s for 8s
+stay eye_inside at [314|580] starting at 0s for 8s
+move pupil from [300|570] to [340|590] starting at 0s for 2s
+move pupil from [340|590] to [340|570] starting at 2s for 2s
+move pupil from [340|570] to [340|590] starting at 4s for 2s
+move pupil from [340|590] to [340|570] starting at 6s for 2s
+stay leg_left at [290|340] starting at 0s for 8s
+stay leg_right at [392|340] starting at 0s for 8s
+stay feet_left at [285|295] starting at 0s for 8s
+stay feet_right at [408|295] starting at 0s for 8s
+stay arm_left at [251|390] starting at 0s for 8s
+stay arm_right at [455|390] starting at 0s for 8s
+stay hand_left at [256|340] starting at 0s for 8s
+stay hand_right at [460|340] starting at 0s for 8s
+stay button_left at [303|464] starting at 0s for 8s
+stay button_right at [430|464] starting at 0s for 8s
+
+stay hair1 at [310|675] starting at 0s for 8s
+stay hair2 at [350|695] starting at 0s for 8s
+stay hair3 at [390|695] starting at 0s for 8s
+stay hair4 at [430|675] starting at 0s for 8s
+
+move B1 from [1000|500] to [1000|650] starting at 0s for 2s
+move B1 from [1000|650] to [1000|500] starting at 2s for 2s
+
+move B1 from [1000|500] to [1000|650] starting at 4s for 2s
+move B1 from [1000|650] to [1000|500] starting at 6s for 2s

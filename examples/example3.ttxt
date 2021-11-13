@@ -1,0 +1,102 @@
+canvas colour: black
+text name: black "YouAnimate" font-size 8000
+
+shape rectangle1: white rectangle height=1080 width=200
+shape rectangle2: white rectangle height=1080 width=200
+
+stay rectangle1 at [0|540] starting at 0s for 20s
+stay rectangle2 at [1920|540] starting at 0s for 20s
+
+shape rectangle3: white rectangle height=1080 width=100
+shape rectangle4: white rectangle height=1080 width=100
+
+stay rectangle3 at [250|540] starting at 0s for 20s
+stay rectangle4 at [1670|540] starting at 0s for 20s
+
+shape main1: red circle radius=400
+shape main2: orange circle radius=400
+shape main3: yellow circle radius=400
+shape main4: green circle radius=400
+shape main5: blue circle radius=400
+shape main6: white circle radius=400
+
+group G1 is name on main6
+
+loop x from [0] to [10] increment 10:
+    move main1 from [0|550] to [1000|550] starting at xs for 3s
+    move main2 from [200|550] to [1000|550] starting at xs for 3s
+    move main3 from [400|550] to [1000|550] starting at xs for 3s
+    move main4 from [600|550] to [1000|550] starting at xs for 3s
+    move main5 from [800|550] to [1000|550] starting at xs for 3s
+
+shape main7: red circle radius=400
+shape main8: orange circle radius=400
+shape main9: yellow circle radius=400
+shape main10: green circle radius=400
+shape main11: blue circle radius=400
+
+loop x from [0] to [10] increment 10:
+    move main7 from [2000|550] to [1000|550] starting at xs for 3s
+    move main8 from [1800|550] to [1000|550] starting at xs for 3s
+    move main9 from [1600|550] to [1000|550] starting at xs for 3s
+    move main10 from [1400|550] to [1000|550] starting at xs for 3s
+    move main11 from [1200|550] to [1000|550] starting at xs for 3s
+    move G1 from [1000|550] to [1000|550] starting at xs for 10s
+
+shape circle7: black circle radius=90
+shape circle8: black circle radius=90
+shape circle9: black circle radius=90
+shape circle10: black circle radius=90
+shape circle11: black circle radius=90
+shape circle12: black circle radius=90
+
+loop x from [0] to [10] increment 10:
+	move circle7 from [600|550] to [810|200] starting at xs for 10s
+    move circle8 from [810|200] to [1200|200] starting at xs for 10s
+    move circle9 from [1200|200] to [1400|550] starting at xs for 10s
+    move circle10 from [1400|550] to [1200|930] starting at xs for 10s
+    move circle11 from [1200|930] to [810|930] starting at xs for 10s
+    move circle12 from [810|930] to [600|550] starting at xs for 10s
+
+shape circle01: red circle radius=40
+shape circle02: orange circle radius=40
+shape circle03: yellow circle radius=40
+shape circle04: green circle radius=40
+shape circle05: blue circle radius=40
+shape circle06: purple circle radius=40
+
+loop x from [0] to [10] increment 10:
+	move circle01 from [600|550] to [810|200] starting at xs for 10s
+    move circle02 from [810|200] to [1200|200] starting at xs for 10s
+    move circle03 from [1200|200] to [1400|550] starting at xs for 10s
+    move circle04 from [1400|550] to [1200|930] starting at xs for 10s
+    move circle05 from [1200|930] to [810|930] starting at xs for 10s
+    move circle06 from [810|930] to [600|550] starting at xs for 10s
+
+text desc1: black "A" font-size 2500
+shape circle1: red circle radius=80
+text desc2: black "DSL" font-size 2500
+shape circle2: orange circle radius=80
+text desc3: black "for" font-size 2500
+shape circle3: yellow circle radius=80
+text desc4: black "YouTube" font-size 2500
+shape circle4: green circle radius=80
+text desc5: black "intros" font-size 2500
+shape circle5: blue circle radius=80
+text cpsc: black "CPSC 410" font-size 2000
+shape circle6: white circle radius=80
+
+group G2 is desc1 on circle1
+group G3 is desc2 on circle2
+group G4 is desc3 on circle3
+group G5 is desc4 on circle4
+group G6 is desc5 on circle5
+group G7 is cpsc on circle6
+
+loop x from [0] to [10] increment 10:
+	move G2 from [600|550] to [810|890] starting at xs for 9s
+    move G3 from [810|890] to [1200|890] starting at xs for 9s
+    move G4 from [1200|890] to [1400|550] starting at xs for 9s
+    move G5 from [1400|550] to [1200|200] starting at xs for 9s
+    move G6 from [1200|200] to [810|200] starting at xs for 9s
+    move G7 from [810|200] to [600|550] starting at xs for 9s

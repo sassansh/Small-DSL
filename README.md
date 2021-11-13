@@ -1,70 +1,80 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
 <br />
 <p align="center">
- <a href="https://github.com/sassansh/Small-DSL">
-    <img src="/images/logo.png" alt="Logo" width="117" height="80">
+ <a href="https://github.com/sassansh/YouAnimate">
+    <img src="/images/logo.png" alt="Logo" width="80" height="80">
   </a>
-  <h2 align="center">A Small DSL ✨</h2>
+  <h2 align="center">YouAnimate</h2>
 
   <p align="center">
-     Design, evaluation and implementation of a new small <a href="https://en.wikipedia.org/wiki/Domain-specific_language">DSL</a>. Built as a group project for UBC <a href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=CPSC&course=317">CPSC 410</a> (Advanced Software Engineering).
+     Design, evaluation and implementation of a new small <a href="https://en.wikipedia.org/wiki/Domain-specific_language">DSL</a> for creating animation intros for Youtube videos.
+  <br>
+     Built as a group project for UBC <a href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=CPSC&course=317">CPSC 410</a> (Advanced Software Engineering).
   </p>
 </p>
 
 ## Table of Contents
 
-- [Goals 🎯](#goals-)
 - [Technology Stack 🛠️](#technology-stack-)
 - [Prerequisites 🍪](#prerequisites-)
+- [DSL Documentation 📑](#dsl-documentation-)
 - [Setup 🔧](#setup-)
-- [Assignment Description 📚](#assignment-description-)
 - [Team ‎😃](#team-)
-
-## Goals 🎯
-
-The goals of this assignment are:
-
-- Original motivation of DSL; Clear and convincing use-case.
-- Design of language; extent of fit for use-case
-- Quality of implementation; smooth user experience. Follows good software engineering practice (clear code, organized, comments, version control etc.)
-- User evaluation: performing user studies & acting appropriately on feedback
-- Evaluation of your own work at various stages, including analysis of user study results.
-- Team management and organization: dividing & coordinating responsibilities within group, submission of the milestones on time, communication with your TAs, & correct video length
 
 ## Technology Stack 🛠️
 
-To be determined.
+- [Java](https://www.java.com/)
+- [ANTLR](https://www.antlr.org/)
+- [JavaScript](https://www.javascript.com/)
+- [Three.js](https://threejs.org/)
 
 ## Prerequisites 🍪
 
-You should have [Git](https://git-scm.com/) installed on your PC.
+You should have [Git](https://git-scm.com/), [Java JDK](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html), and [IntelliJ](https://www.jetbrains.com/idea/) installed on your PC.
+
+## DSL Documentation 📑
+
+You can find the documentation for our DSL [here](https://docs.google.com/document/u/1/d/1JZ_tn1B5y1mpXwdKgLnvXXabwn9wzKqyWTBE4OTIp9s/edit).
 
 ## Setup 🔧
 
 1. Clone the repo using:
 
    ```bash
-     git clone https://github.com/sassansh/Small-DSL.git
+     git clone https://github.com/sassansh/YouAnimate
    ```
 
-## Assignment Description 📚
+2. To install the SDK:
+   1. Download the [Java JDK](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html) (this project has been tested with SDK 16.0.2 - not sure about other versions).
+   2. If you download the installer for your specific machine and run it, the Java version should be set up for you.
+   3. Select File > Project Structure.
+   4. Under 'Project Settings', choose 'Project' and for 'Project SDK' select '16' (it should automatically be detected and selectable).
+3. To install ANTLR:
+   1. Select File > Project Structure.
+   2. Under 'Project Settings', choose 'Libraries' and select the '+' icon to add a new project library.
+   3. Choose 'JAVA' and select YouAnimate/lib/antlr-4.9.2-complete.jar.
+4. To generate (or update) the lexer files:
+   1. Right-click on YouAnimate/src/parser/YouAnimateLexer.g4.
+   2. Select 'Generate ANTLR Recognizer.'
+   3. The files will show up under gen/parser.
+5. To generate (or update) the parser files:
+   1. Right-click on YouAnimate/src/parser/YouAnimateParser.g4.
+   2. Select 'Generate ANTLR Recognizer.'
+   3. The files will show up under gen/parser.
+6. To set the project's source folders:
+   1. Select File > Project Structure.
+   2. Under 'Project Settings', choose 'Modules.' Right-click the gen folder, and select 'Sources.'
+   3. Make sure both the 'src' and 'gen' folders are blue and listed underneath the 'Source Folders' header on the right.
+7. To build the project:
+   1. Select Build > Build Project.
+8. To generate your animation
+   1. Write your input inside of YouAnimate/input.ttxt
+   1. Then run the Main class.
+   1. In the console log, a list of the tokens detected will be displayed, along with any errors for the lexer / parser / evaluator.
+   1. You will now have a generated HTML file at YouAnimate/index.html
+   1. Open YouAnimate/index.html in a browser to view your animation
 
-- Think up a *use-case* for a new small *domain-specific language* (DSL)
-  - Make this explicit: what will the DSL enable, and how? Submit your group's idea to your TA for feedback.
-- Define the DSL informally on paper: its grammar and semantics
-- Divide the project/implementation work into clearly-defined responsibilities
-
-  - Make sure to use *version control throughout your project*; use the git repository we will provide to you.
-
-- Perform a *task-driven user study* on the effectiveness of the language *before* you start implementing.
-- Modify the language based on the results of the study; _redesign accordingly_.
-- Implement the language (some possible techniques over the next lectures).
-- Perform a *task-driven user study* on effectiveness of the complete language. Reflect on the outcome: what is your evaluation?
+**NOTE**: If you encounter any errors (ex. with the ANTLR files, class imports, project builds, etc.), try selecting File > Invalidate Caches.
+Then select 'Invalidate & Restart.'
 
 ## Team ‎😃
 
@@ -77,14 +87,3 @@ Amir Jafarvand - [GitHub](https://github.com/amirjfr) - [LinkedIn](https://www.l
 Angela Tian - [GitHub](https://github.com/tiangela1027) - [LinkedIn](https://www.linkedin.com/in/tiangela/) - [Personal Website](https://tiangela1027.github.io)
 
 Anna Takeuchi - [GitHub](https://github.com/annatake) - [LinkedIn](https://www.linkedin.com/in/anna-takeu/?originalSubdomain=ca)
-
-[contributors-shield]: https://img.shields.io/github/contributors/sassansh/Small-DSL.svg?style=for-the-badge
-[contributors-url]: https://github.com/sassansh/Small-DSL/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/sassansh/Small-DSL.svg?style=for-the-badge
-[forks-url]: https://github.com/sassansh/Small-DSL/network/members
-[stars-shield]: https://img.shields.io/github/stars/sassansh/Small-DSL.svg?style=for-the-badge
-[stars-url]: https://github.com/sassansh/Small-DSL/stargazers
-[issues-shield]: https://img.shields.io/github/issues/sassansh/Small-DSL.svg?style=for-the-badge
-[issues-url]: https://github.com/sassansh/Small-DSL/issues
-[license-shield]: https://img.shields.io/github/license/sassansh/Small-DSL.svg?style=for-the-badge
-[license-url]: https://github.com/sassansh/Small-DSL/blob/main/LICENSE.txt
